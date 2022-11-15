@@ -79,26 +79,29 @@ let b = 21;
 console.log(a + b); //first expression
 // Prediction: 55
 // Actual: 55
-
+// Explanation: a simple arithmetic operation between Numbers here.
 a = 2;
 
 console.log(a + b); //second expression
 // Prediction: 23
 // Actual: 23
+// Explanation: Only variable a gets updated with a new value
 
 // Exercise 5
 
 typeof (15);
-// Prediction: number
-// Actual: number
+// Prediction: Number
+// Actual: Number
+// Integers have a type of Number
 
 typeof (5.5);
-// Prediction: number
-// Actual: number
+// Prediction: Number
+// Actual: Number
 
 typeof (NaN);
-// Prediction: number
-// Actual: number
+// Prediction: Number
+// Actual: Number
+// https://stackoverflow.com/a/2801617
 
 typeof ("hello");
 // Prediction: string
@@ -127,31 +130,42 @@ typeof (1 != 2);
 "1" - "3";
 // Prediction: -2
 // Actual: -2
+// Explanation: If you subtract a string from a string, where both represent a Number value, 
+// the result will be that of the arithmetic operation of the values : https://stackoverflow.com/a/40848608
 
 "johnny" + 5;
 // Prediction: "johnny5"
 // Actual: "johnny5"
+// Explanation: If you add a Number and a string, the result will be a string concatenation: https://stackoverflow.com/a/40848608
 
 "johnny" - 5;
 // Prediction: NaN
 // Actual: NaN
+// Explanation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN#description
+// A method or expression whose operand is or gets coerced to NaN
+
 
 99 * "hello";
 // Prediction: NaN
 // Actual: NaN
+// Explanation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN#description
+// A method or expression whose operand is or gets coerced to NaN
+
 
 1 != 1;
 // Prediction: false
 // Actual: false
+// Explanation: Since 1 is equal to 1 the check with the condition 1 is not equal to 1 returns false.
 
 1 == "1";
 // Prediction: true
 // Actual: true
+// Explanation:The condition checks only if values are the same 
 
 1 === "1";
 // Prediction: false
 // Actual: false
-// ===========
+// Explanation: Strict equality, the condition checks if both the types and values are the same 
 
 
 // Exercise 6
@@ -159,58 +173,79 @@ typeof (1 != 2);
 5 + "34";
 // Prediction: "534"
 // Actual: "534"
+// Explanation: If you add a Number and a string, the result will be a string concatenation: https://stackoverflow.com/a/40848608
 
 5 - "4";
 // Prediction: 1
 // Actual: 1
+// Explanation: If you subtract a string from a Number, the result will be the arithmetic operation of the 2 values, if the value of the string corresponds to a Number: https://stackoverflow.com/a/40848608
+
 
 10 % 5;
 // Prediction: 0
 // Actual: 0
+// Explanation: Modulo arithmetic operation, here gives the remainder of 10 divided by 5 which is 0
 
 5 % 10;
 // Prediction: 5
 // Actual: 5
+// Explanation: Modulo arithmetic operation, here gives the remainder of 5 divided by 10 which is 5
 
 "Java" + "Script";
 // Prediction: "JavaScript"
 // Actual: "JavaScript"
+// Explanation: Simple concatenation of 2 strings
+
 
 " " + " ";
 // Prediction: "  "
 // Actual: "  "
+// Explanation: Simple concatenation of 2 strings
 
 " " + 0;
 // Prediction: ' 0'
 // Actual: ' 0'
+// Explanation: If you add a Number and a string, the result will be a string concatenation: https://stackoverflow.com/a/40848608
 
 true + true;
 // Prediction: 2
 // Actual: 2
+// Explanation: Number representation of false is 0 and 1 for true, so this is treated as a simple arithmetic operation
+// https://dorey.github.io/JavaScript-Equality-Table/unified/
 
 true + false;
 // Prediction: 1
 // Actual: 1
+// Explanation: Number representation of false is 0 and 1 for true, so this is treated as a simple arithmetic operation
+// https://dorey.github.io/JavaScript-Equality-Table/unified/
 
 false + true;
 // Prediction: 1
 // Actual: 1
+// Explanation: Number representation of false is 0 and 1 for true, so this is treated as a simple arithmetic operation
+// https://dorey.github.io/JavaScript-Equality-Table/unified/
 
 false - true;
 // Prediction: -1
 // Actual: -1
+// Explanation: Number representation of false is 0 and 1 for true, so this is treated as a simple arithmetic operation
+// https://dorey.github.io/JavaScript-Equality-Table/unified/
 
 !true;
 // Prediction: false
 // Actual: false
+// Explanation: not operator
 
 3 - 4;
 // Prediction: -1
 // Actual: -1
+// Explanation: Just a simple subtraction operation with 2 integers
 
 "Bob" - "bill";
 // Prediction: NaN
 // Actual: NaN
+// Explanation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN#description
+// A method or expression whose operand is or gets coerced to NaN
 
 
 
