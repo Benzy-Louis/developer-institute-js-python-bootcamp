@@ -6,9 +6,9 @@
 // and your favorite meal of the day is "dinner",
 // you will console.log
 // I eat chocolate at every dinner
-favoriteFood = "boiled noodles"
-favoriteMealOfTheDay = "lunch"
-console.log(`I eat ${favoriteFood} at every ${favoriteMealOfTheDay}.`)
+favoriteFood = "boiled noodles";
+favoriteMealOfTheDay = "lunch";
+console.log(`I eat ${favoriteFood} at every ${favoriteMealOfTheDay}.`);
 
 
 // Exercise 2
@@ -76,79 +76,79 @@ let c;
 let a = 34;
 let b = 21;
 
-console.log(a + b) //first expression
+console.log(a + b); //first expression
 // Prediction: 55
 // Actual: 55
 
 a = 2;
 
-console.log(a + b) //second expression
+console.log(a + b); //second expression
 // Prediction: 23
 // Actual: 23
 
 // Exercise 5
 
-typeof (15)
+typeof (15);
 // Prediction: number
 // Actual: number
 
-typeof (5.5)
+typeof (5.5);
 // Prediction: number
 // Actual: number
 
-typeof (NaN)
+typeof (NaN);
 // Prediction: number
 // Actual: number
 
-typeof ("hello")
+typeof ("hello");
 // Prediction: string
 // Actual: string
 
-typeof (true)
+typeof (true);
 // Prediction: boolean
 // Actual: boolean
 
-typeof (1 != 2)
+typeof (1 != 2);
 // Prediction: boolean
 // Actual: boolean
 
-"hamburger" + "s"
+"hamburger" + "s";
 // Prediction: "hamburgers"
 // Actual: "hamburgers"
 
-"hamburgers" - "s"
+"hamburgers" - "s";
 // Prediction: NaN
 // Actual: NaN
 
-"1" + "3"
+"1" + "3";
 // Prediction: "13"
 // Actual: "13"
 
-"1" - "3"
+"1" - "3";
 // Prediction: -2
 // Actual: -2
 
-"johnny" + 5
+"johnny" + 5;
 // Prediction: "johnny5"
 // Actual: "johnny5"
 
-"johnny" - 5
+"johnny" - 5;
 // Prediction: NaN
 // Actual: NaN
 
-99 * "hello"
+99 * "hello";
 // Prediction: NaN
 // Actual: NaN
 
-1 != 1
+1 != 1;
 // Prediction: false
 // Actual: false
 
-1 == "1"
+1 == "1";
 // Prediction: true
 // Actual: true
 
-1 === "1"
+1 === "1";
 // Prediction: false
 // Actual: false
 // ===========
@@ -156,59 +156,59 @@ typeof (1 != 2)
 
 // Exercise 6
 
-5 + "34"
+5 + "34";
 // Prediction: "534"
 // Actual: "534"
 
-5 - "4"
+5 - "4";
 // Prediction: 1
 // Actual: 1
 
-10 % 5
+10 % 5;
 // Prediction: 0
 // Actual: 0
 
-5 % 10
+5 % 10;
 // Prediction: 5
 // Actual: 5
 
-"Java" + "Script"
+"Java" + "Script";
 // Prediction: "JavaScript"
 // Actual: "JavaScript"
 
-" " + " "
+" " + " ";
 // Prediction: "  "
 // Actual: "  "
 
-" " + 0
+" " + 0;
 // Prediction: ' 0'
 // Actual: ' 0'
 
-true + true
+true + true;
 // Prediction: 2
 // Actual: 2
 
-true + false
+true + false;
 // Prediction: 1
 // Actual: 1
 
-false + true
+false + true;
 // Prediction: 1
 // Actual: 1
 
-false - true
+false - true;
 // Prediction: -1
 // Actual: -1
 
-!true
+!true;
 // Prediction: false
 // Actual: false
 
-3 - 4
+3 - 4;
 // Prediction: -1
 // Actual: -1
 
-"Bob" - "bill"
+"Bob" - "bill";
 // Prediction: NaN
 // Actual: NaN
 
