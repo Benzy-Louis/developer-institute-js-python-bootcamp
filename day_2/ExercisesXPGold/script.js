@@ -64,4 +64,4 @@ alert(`The result of ${num1} * ${num2} is: ${Number(num1) * Number(num2)}`);
 num1 = prompt('Division example dividing num1 by num2 i.e result = num1 / num2, please input num1.');
 num2 = prompt('Division example dividing num1 by num2 i.e result = num1 / num2, please input num2.');
 
-alert(`The result of ${num1} / ${num2} is: ${Number(num1) / Number(num2)}`); 
+alert(`The result of ${num1} / ${num2} is: ${Number(num1) / Number(num2)}`);
