@@ -1,4 +1,6 @@
-// Create 2 variables. The values should be strings. For example:
+// Exercise 1
+let sentence = ["my", "favorite", "color", "is", "blue"];
+console.log(sentence.join(" "));
 // let str1 = "mix";
 // let str2 = "pod";
 
