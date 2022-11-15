@@ -1,0 +1,23 @@
+img {
+    width: 80%;
+    border: 8px solid orangered;
+    display: block;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.indented-div {
+    margin-left: 2em;
+}
+
+th.table-row-red {
+    border: 2px solid red;
+    color: red;
+}
+
+
+th, td {
+    border: 1px solid black;
+}
