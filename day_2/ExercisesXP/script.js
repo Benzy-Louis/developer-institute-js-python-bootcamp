@@ -97,6 +97,7 @@ typeof (15);
 typeof (5.5);
 // Prediction: Number
 // Actual: Number
+// Explanation a floating point number is treated as a Number as well in JS
 
 typeof (NaN);
 // Prediction: Number
@@ -239,7 +240,7 @@ false - true;
 3 - 4;
 // Prediction: -1
 // Actual: -1
-// Explanation: Just a simple subtraction operation with 2 integers
+// Explanation: Just a simple subtraction operation with 2 Number 
 
 "Bob" - "bill";
 // Prediction: NaN
