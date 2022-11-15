@@ -27,7 +27,7 @@ Examples
 */
 
 let strAskForNumbers = prompt('Please input numbers separated by commas\n \
-                   and we\'ll add them e.g. "2,3"➞ 5 ');
+                   and we\'ll add them e.g. "2,3,4"➞ 9 ');
 
 let splittedString = strAskForNumbers.split(",");
 sum = splittedString.map(function (elt) { // assure the value can be converted into an integer
