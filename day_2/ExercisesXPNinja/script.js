@@ -36,6 +36,7 @@ sum = splittedString.map(function (elt) { // assure the value can be converted i
     return a + b
 })
 
+alert(`The sum of the numbers is: ${sum}`);
 
 console.log(sum); // 6
 
