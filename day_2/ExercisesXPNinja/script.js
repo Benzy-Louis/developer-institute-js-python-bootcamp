@@ -70,3 +70,45 @@ function findingNemo(strContainingNemo) {
 let text = prompt('Input a sentence containing the word "Nemo" (or not) for me please');
 
 alert(`${findingNemo(text)}`);
+
+/*
+Exercise 4 : Boom
+Instructions
+Hint: if statement (tomorrow’s lesson)
+
+Prompt the user for a number. Depending on the users number you will return a string of the word “Boom”. Follow the rules below:
+
+If the number given is less than 2 : return “boom”
+If the number given is bigger than 2 : the string should include n number of “o”s (n being the number given)
+If the number given is evenly divisible by 2, add a exclamation mark to the end.
+If the number given is evenly divisible by 5, return the string in ALL CAPS.
+If the number given is evenly divisible by both 2 and 5, return the string in ALL CAPS and add an exclamation mark to the end.
+*/
+
+let boomNumber = prompt('Input a number please');
+
+function boomNumberMessage(boomNumber) {
+    boomNumber = parseInt(boomNumber);
+    boomReturnStr = "";
+    if (boomNumber < 2) {
+        // If the number given is less than 2 : return “boom”
+        boomReturnStr = "boom"
+        return boomReturnStr;
+    }
+
+    if (boomNumber >= 2) {
+        // If the number given is bigger than 2 : the string should include n number of “o”s(n being the number given)}
+        boomReturnStr = "b" + "o".repeat(boomNumber) + "m";
+        if ((boomNumber % 2) == 0) {
+            // evenly divisible by 2, add a exclamation mark to the end.
+            boomReturnStr = boomReturnStr + "!";
+        }
+        if ((boomNumber % 5) == 0) {
+            //  number given is evenly divisible by 5, return the string in ALL CAPS.
+            boomReturnStr = boomReturnStr.toUpperCase();
+        }
+        return boomReturnStr;
+    }
+}
+
+alert(`${boomNumberMessage(boomNumber)}`);
