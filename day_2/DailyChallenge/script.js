@@ -20,3 +20,16 @@ fruits.splice(fruits.indexOf("Apples"), 1);
 // console.log(fruits);
 fruits.reverse();
 console.log(fruits);
+
+/*
+Exercise 2:
+Using this array :
+
+const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+Access and then console.log “Oranges”.
+Bonus: If you would like more array exercises take a look at the link below.
+https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php
+Array Exercises
+*/
+const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+console.log(moreFruits[1][1][0])
