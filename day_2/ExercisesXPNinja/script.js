@@ -38,6 +38,37 @@ sum = splittedString.map(function (elt) { // assure the value can be converted i
 
 alert(`The sum of the numbers is: ${sum}`);
 
-console.log(sum); // 6
+/*
+Exercise 3 : Find Nemo
+Instructions
+Hint: if statement (tomorrow’s lesson)
+
+Ask the user to give you a sentence containing the word “Nemo”. For example "I love the movie named Nemo"
+Find the word “Nemo”
+Console.log a string as follows: "I found Nemo at [the position of the word Nemo]".
+If you can’t find Nemo, console.log “I can’t find Nemo”.
+Some examples:
+
+    "I love the movie named Nemo" ➞ "I found Nemo at 5"
+    "Nemo is a cute fish" ➞ "I found Nemo at 0"
+    "My fish is called Nemo, I love it" ➞ "I found Nemo at 4"
+*/
+
+// Function finding Nemo
+function findingNemo(strContainingNemo) {
+    foundNemoAt = strContainingNemo.split(" ").indexOf("Nemo");
+    if (foundNemoAt == -1) {
+        // I expect only a comma once at the end of the string
+        foundNemoAt = strContainingNemo.split(" ").indexOf("Nemo,");
+        if (foundNemoAt == -1) {
+            return "I can't find Nemo";
+        }
+    }
+    return `I found Nemo at ${foundNemoAt}`;
+}
+
+let text = prompt('Input a sentence containing the word "Nemo" (or not) for me please');
+
+alert(`${findingNemo(text)}`);
 
 alert(`The sum ofthe numbers is: ${sum}`);
