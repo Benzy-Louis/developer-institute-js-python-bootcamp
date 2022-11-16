@@ -70,5 +70,3 @@ function findingNemo(strContainingNemo) {
 let text = prompt('Input a sentence containing the word "Nemo" (or not) for me please');
 
 alert(`${findingNemo(text)}`);
-
-alert(`The sum ofthe numbers is: ${sum}`);
