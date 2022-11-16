@@ -14,5 +14,7 @@ let x = 5;
 let y = 2;
 if (x > y) {
     biggest = x;
+} else {
+    biggest = y;
 }
 console.log(`${biggest} is the biggest number among the numbers: ${x} and ${y}.`)
