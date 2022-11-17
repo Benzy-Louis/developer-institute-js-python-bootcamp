@@ -7,7 +7,7 @@ Bonus: Change it to console.log “My 1st choice”, “My 2nd choice”, “My 
 Hint : create an array of suffixes to do the Bonus
 */
 
-favoriteColors = ["red", "blue", "yellow", "black"];
+favoriteColors = ["red", "blue", "yellow", "green", "black"];
 
 console.log("PART 1 - #\n");
 for (let i in favoriteColors) {
@@ -16,7 +16,7 @@ for (let i in favoriteColors) {
 
 console.log("\nPART 2 - BONUS\n")
 
-ordinal = ["st", "nd", "rd", "th"];
+ordinal = ["st", "nd", "rd", "th", "th"];
 
 for (let i in favoriteColors) {
     console.log(`My ${parseInt(i) + 1}${ordinal[i]} choice is ${favoriteColors[i]}`);
