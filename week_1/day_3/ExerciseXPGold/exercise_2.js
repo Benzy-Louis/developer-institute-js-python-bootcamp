@@ -10,7 +10,7 @@ If the grade is between 70(included) and 80 (included), console.log "C"
 If the grade is lower than 70, console.log "D"
 */
 
-userGrade = Number(prompt("Input your grade please."));
+let userGrade = Number(prompt("Input your grade please."));
 
 if (userGrade > 90) {
     console.log("A");
