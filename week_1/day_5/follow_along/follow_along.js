@@ -1,3 +1,6 @@
+/* eslint-disable require-jsdoc */
+/* eslint-disable max-len */
+
 // Exercise 1
 /*
 1. Create a structured HTML file linked to a JS file
@@ -10,8 +13,8 @@
 */
 
 function showMumAndDadAge(myAge) {
-    myAge = Number(myAge);
-    console.log(`My mum is twice my age: ${myAge * 2}, and my dad is 1.2 times the age of my mum: ${(parseInt(myAge * 2 * 1.2))} `);
+  myAge = Number(myAge);
+  console.log(`My mum is twice my age: ${myAge * 2}, and my dad is 1.2 times the age of my mum: ${(parseInt(myAge * 2 * 1.2))} `);
 }
 
 showMumAndDadAge(18);
@@ -30,6 +33,6 @@ showMumAndDadAge(18);
 */
 
 function showMumAge(myAge) {
-    return myAge * 2;
+  return myAge * 2;
 }
 console.log(`My mum age: ${showMumAge(18)} `);
