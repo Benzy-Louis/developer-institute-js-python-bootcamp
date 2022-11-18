@@ -62,12 +62,12 @@ function findLongestWordLength(wordsArray) {
 }
 
 function drawStarFrameAroundWords(wordsArray, lengthOfLongestWord) {
-  // There's a row at the top and a row at the bottom to frame the text
-  // There's a column on each side separate by one space to frame
-  // the words on the side
+  // There's a row at the top and a row at the bottom, to frame the text
+  // There's a column on each side separated by one space to frame
+  // the words on the sides.
 
-  // Draw the top frame so 2 more character on both sides
-  // i.e for * and the space that's why I add 4 more to the repeat.
+  // Draw the top frame, so 2 more characters on both sides
+  // i.e one for * and one for the space that's why I add 4 more to the repeat.
   console.log('*'.repeat(lengthOfLongestWord + 4));
 
   // * " " "word gap + space padding" " " * // So we have 2 characters added on both sides
@@ -75,8 +75,8 @@ function drawStarFrameAroundWords(wordsArray, lengthOfLongestWord) {
     console.log('* ' + wordsArray[i] + ' '.repeat(lengthOfLongestWord - wordsArray[i].length) + ' * ');
   }
 
-  // Draw the bottom frame so 2 more character on both sides
-  // i.e for * and the space that's why I add 4 more to the repeat.
+  // Draw the bottom frame, so 2 more characters on both sides
+  // i.e one for * and one for the space that's why I add 4 more to the repeat.
   console.log('*'.repeat(lengthOfLongestWord + 4));
 }
 
