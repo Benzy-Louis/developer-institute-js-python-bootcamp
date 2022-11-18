@@ -1,0 +1,3 @@
+// Here accessing an alt
+document.getElementsByTagName("img")[0].alt === 'this is fake image'
+// Add id attribute the elements
