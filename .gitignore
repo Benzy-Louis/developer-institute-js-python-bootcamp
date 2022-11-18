@@ -5,3 +5,4 @@ developer-institute-js-python-bootcamp.code-workspace
 node_modules
 package-lock.json
 package.json
+.eslintrc.yml
