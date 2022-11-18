@@ -19,9 +19,8 @@ for (let i = 0; i < 6; i++) {
     console.log("* ".repeat(i + 1));
 }
 
-console.log("USING A NESTED LOOP\n");
+console.log("\nUSING A NESTED LOOP\n");
 
-let str = "";
 for (let i = 0; i < 6; i++) {
     str = "";
     for (let j = 0; j <= i; j++) {

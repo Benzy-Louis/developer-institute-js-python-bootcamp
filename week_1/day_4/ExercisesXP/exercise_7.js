@@ -8,7 +8,7 @@ Hint: a string is an array of letters
 */
 
 const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-firstLetterOfNames = [];
+let firstLetterOfNames = [];
 for (let name of names) {
     firstLetterOfNames.push(name[0]);
 };

@@ -9,7 +9,7 @@ Requirements : Don’t use built-in Javascript methods to answer the following q
 2. Console.log the highest age in the array.
 */
 let age = [20, 5, 12, 43, 98, 55];
-sum = 0;
+let sum = 0;
 
 // 1. Console.log the sum of all the numbers in the age array.
 for (num of age) {

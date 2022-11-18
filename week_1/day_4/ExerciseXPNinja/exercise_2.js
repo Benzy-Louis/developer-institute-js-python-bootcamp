@@ -21,7 +21,7 @@ let grades = [20, 85, 90, 70, 80, 80];
 // let grades = [20, 40, 90, 3, 4, 5];
 
 function findAvg(gradesList) {
-    avg = 0;
+    let avg = 0;
     for (grade of gradesList) {
         avg += Number(grade)
     }

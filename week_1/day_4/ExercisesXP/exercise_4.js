@@ -35,13 +35,13 @@ console.log(`There are ${building.numberOfAptByFloor.firstFloor} apartments on t
 /*
 4. Console.log the name of the second tenant and the number of rooms he has in his apartment.
 */
-secondTenant = building.nameOfTenants[1];
+let secondTenant = building.nameOfTenants[1];
 console.log(`The second tenant is ${secondTenant}, and ${secondTenant} has ${building.numberOfRoomsAndRent[secondTenant.toLowerCase()][0]} rooms in their apartment.`)
 /*
 5. Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
 */
 
-sumRentSarahDavid = building.numberOfRoomsAndRent.sarah[1] + building.numberOfRoomsAndRent.david[1];
+let sumRentSarahDavid = building.numberOfRoomsAndRent.sarah[1] + building.numberOfRoomsAndRent.david[1];
 
 if (sumRentSarahDavid > building.numberOfRoomsAndRent.dan[1]) {
     building.numberOfRoomsAndRent.david[1] = 1200;
