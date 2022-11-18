@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
  Exercise 1 : Information
 Instructions

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
 Exercise 6 : Vacations Costs
 Instructions
@@ -31,3 +32,4 @@ Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarC
 
 6. Bonus: Instead of using a prompt inside the 3 first functions, only use a prompt inside the totalVacationCost() function. You need to change the 3 first functions, accordingly.
 */
+

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
 Exercise 1
 Create a structured HTML file linked to a JS file
@@ -18,5 +19,5 @@ Sample Output: //"0 is even" //"1 is odd" //"2 is even"
 // }
 
 for (let i = 0; i <= 15; i++) {
-    console.log(`${i} is ${i % 2 === 0 ? 'even' : 'odd'}`)
+  console.log(`${i} is ${i % 2 === 0 ? 'even' : 'odd'}`);
 }

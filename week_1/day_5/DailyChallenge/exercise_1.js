@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
 Daily Challenge: Words In The Stars
 Last updated : March 30th 2021

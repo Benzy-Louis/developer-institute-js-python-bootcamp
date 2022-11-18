@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
 Exercise 4 : Shopping List
 Instructions

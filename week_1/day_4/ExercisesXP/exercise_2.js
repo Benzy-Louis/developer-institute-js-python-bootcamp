@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
 Exercise 2 : Your Favorite Colors
 Instructions
@@ -10,6 +11,7 @@ Hint : create an array of suffixes to do the Bonus
 const favoriteColors = ['red', 'blue', 'yellow', 'green', 'black'];
 
 console.log('PART 1 - #\n');
+// eslint-disable-next-line guard-for-in
 for (const i in favoriteColors) {
   console.log(`My #${parseInt(i) + 1} choice is ${favoriteColors[i]}`);
 }
@@ -17,6 +19,7 @@ for (const i in favoriteColors) {
 console.log('\nPART 2 - BONUS\n');
 
 const suffix = ['st', 'nd', 'rd', 'th', 'th'];
+// eslint-disable-next-line guard-for-in
 for (const i in favoriteColors) {
   console.log(`My ${parseInt(i) + 1}${suffix[i]} choice is ${favoriteColors[i]}`);
 }

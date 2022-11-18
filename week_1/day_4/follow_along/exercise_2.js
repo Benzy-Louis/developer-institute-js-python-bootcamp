@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /*
 Exercise 2
 1. Write a JavaScript for loop that will go through the variable names.
@@ -41,26 +42,26 @@ if the item is a string, display it.
 
 // if ( firstLetter !== firstLetter.toUpperCase())
 
-let names = ["john", "sarah", 23, "Rudolf", 34]
+let names = ['john', 'sarah', 23, 'Rudolf', 34];
 
 for (let name of names) {
-    if (typeof (name) !== 'string') {
-        continue;
-    }
+  if (typeof (name) !== 'string') {
+    continue;
+  }
 
-    let firstLetter = name.charAt(0)
-    if (firstLetter !== firstLetter.toUpperCase()) {
-        name = firstLetter.toUpperCase() + name.slice(1);
-    }
+  const firstLetter = name.charAt(0);
+  if (firstLetter !== firstLetter.toUpperCase()) {
+    name = firstLetter.toUpperCase() + name.slice(1);
+  }
 
-    console.log(name)
+  console.log(name);
 }
-console.log("\nSecond part\n")
-names = ["john", "sarah", 23, "Rudolf", 34]
+console.log('\nSecond part\n');
+names = ['john', 'sarah', 23, 'Rudolf', 34];
 
-for (let name of names) {
-    if (typeof (name) !== 'string') {
-        continue;
-    }
-    console.log(name)
+for (const name of names) {
+  if (typeof (name) !== 'string') {
+    continue;
+  }
+  console.log(name);
 }
