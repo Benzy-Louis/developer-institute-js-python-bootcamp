@@ -26,7 +26,7 @@ console.log(numbers.join(""));
 /*
 https://www.mygreatlearning.com/blog/bubble-sort/#bubble-sort-pseudocode
 Bubble Sort Pseudocode Descending
-1. We are given with an input array which is supposed to be sorted in ascending order
+1. We are given with an input array which is supposed to be sorted in descending order
 2. We start with the first element and i=0 index and check if the element present at i+1 is less then we swap the elements at index i and i+1.
 3. If above is not the case, then no swapping will take place.
 4. Now  " i " gets incremented and the above 2 steps happen again until the array is exhausted.
@@ -41,8 +41,8 @@ Bubble Sort(arr, size)
                 if arr[j]<arr[j+1]
                     Swap arr[j] and arr[j+1] 
 */
-for (let i = 0; i < (numbers.length - 1); i++) {
-    for (let j = 0; j < (numbers.length - 2); j++) {
+for (let i = 0; i < (numbers.length - i - 1); i++) {
+    for (let j = 0; j < (numbers.length - i - 1); j++) {
         if (numbers[j] < numbers[j + 1]) {
             tempVar = numbers[j];
             numbers[j] = numbers[j + 1];
