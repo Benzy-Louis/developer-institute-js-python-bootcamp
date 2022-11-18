@@ -12,9 +12,9 @@ Example:
   The string is : "go" your program should console.log : "go"
 */
 
-// userVerb = prompt("Please enter a verb");
+userVerb = prompt("Please enter a verb");
 // let userVerb = "swim"
-let userVerb = "swimming"
+// let userVerb = "swimming"
 // let userVerb = "go"
 
 
