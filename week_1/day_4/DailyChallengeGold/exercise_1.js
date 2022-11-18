@@ -15,8 +15,8 @@ Add comments and console.log the result for each step, this will help you unders
 Requirement: Don’t copy paste solutions from Google
 */
 
-// const numbers = [5, 0, 9, 1, 7, 4, 2, 6, 3, 8];
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numbers = [5, 0, 9, 1, 7, 4, 2, 6, 3, 8];
+// const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(numbers.toString());
 console.log(numbers.join());
 console.log(numbers.join("+"));
