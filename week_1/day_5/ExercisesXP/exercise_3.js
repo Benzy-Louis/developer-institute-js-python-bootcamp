@@ -47,8 +47,8 @@ isDivisible(45) : Console.log all the numbers divisible by 45, and their sum
 
 function isDivisible(divisor) {
   let sum = 0;
-  for (let i = 0; i <=500; i++) {
-    if (i % divisor === 0 ) {
+  for (let i = 0; i <= 500; i++) {
+    if (i % divisor === 0) {
       sum += i;
       console.log(i);
     }
