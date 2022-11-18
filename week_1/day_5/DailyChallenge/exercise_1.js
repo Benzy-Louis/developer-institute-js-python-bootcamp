@@ -28,3 +28,56 @@ Requirements
 To do this challenge you only need Javascript(No HTML and no CSS)
 */
 
+
+function textFramedWithStars() {
+  let userWords;
+  do {
+    userWords = prompt('Please input several words separated by commas');
+  } while (userWords.length == 0); // Prompt the user until they enter at least a word
+  // const userWords = 'Hello, World, in, a, frame';
+  const wordsArray = userWords.split(',');
+
+  // trim whitespace from the words using a for loop
+  for (const wordIndex in wordsArray) {
+    if (Object.prototype.hasOwnProperty.call(wordsArray, wordIndex)) {
+      wordsArray[wordIndex] = wordsArray[wordIndex].trim();
+    }
+  }
+  // find length of longest word
+  const lengthOfLongestWord = findLongestWordLength(wordsArray);
+
+  // draw the frame
+  drawStarFrameAroundWords(wordsArray, lengthOfLongestWord);
+}
+
+function findLongestWordLength(wordsArray) {
+  let lengthOfLongestWord = 0;
+  for (let x of wordsArray) {
+    x = x.trim();
+    if (x.length > lengthOfLongestWord) {
+      lengthOfLongestWord = x.length;
+    }
+  }
+  return lengthOfLongestWord;
+}
+
+function drawStarFrameAroundWords(wordsArray, lengthOfLongestWord) {
+  // There's a row at the top and a row at the bottom to frame the text
+  // There's a column on each side separate by one space to frame
+  // the words on the side
+
+  // Draw the top frame so 2 more character on both sides
+  // i.e for * and the space that's why I add 4 more to the repeat.
+  console.log('*'.repeat(lengthOfLongestWord + 4));
+
+  // * " " "word gap + space padding" " " * // So we have 2 characters added on both sides
+  for (let i = 0; i < wordsArray.length; i++) {
+    console.log('* ' + wordsArray[i] + ' '.repeat(lengthOfLongestWord - wordsArray[i].length) + ' * ');
+  }
+
+  // Draw the bottom frame so 2 more character on both sides
+  // i.e for * and the space that's why I add 4 more to the repeat.
+  console.log('*'.repeat(lengthOfLongestWord + 4));
+}
+
+textFramedWithStars();
