@@ -34,3 +34,18 @@ Examples
 changeEnough(14.11, [2,100,0,0]) => returns false
 changeEnough(0.75, [0,0,20,5]) => returns true
 */
+const changeValue = [0.25, 0.10, 0.05, 0.01];
+
+function changeEnough(itemPrice, amountOfChange) {
+  let sum = 0;
+  for (const i in amountOfChange) {
+    // if (Object.prototype.hasOwnProperty.call(i, amountOfChange)) {
+      console.log(i);
+      sum += changeValue[i]*amountOfChange[i];
+    // }
+  }
+  return sum;
+}
+
+
+console.log(changeEnough(14.11, [2, 100, 0, 0]));
