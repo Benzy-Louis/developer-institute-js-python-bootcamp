@@ -41,7 +41,7 @@ const shoppingList = ['banana', 'orange', 'apple'];
 function myBill() {
   let totalPriceOfShoppingList = 0;
   // console.log(shoppingList);
-  for (const item of shoppingList ) {
+  for (const item of shoppingList) {
     // console.log(item);
     if (stock[item] != 0) {
       // console.log(item);

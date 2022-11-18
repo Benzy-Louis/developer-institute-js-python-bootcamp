@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+/* eslint-disable max-len, require-jsdoc */
 /*
 Exercise 5 : What’s In My Wallet ?
 Instructions
@@ -39,13 +39,11 @@ const changeValue = [0.25, 0.10, 0.05, 0.01];
 function changeEnough(itemPrice, amountOfChange) {
   let sum = 0;
   for (const i in amountOfChange) {
-    // if (Object.prototype.hasOwnProperty.call(i, amountOfChange)) {
-      console.log(i);
-      sum += changeValue[i]*amountOfChange[i];
-    // }
+    if (Object.prototype.hasOwnProperty.call(amountOfChange, i)) {
+      sum += changeValue[i] * amountOfChange[i];
+    }
   }
-  return sum;
+  return (sum > itemPrice);
 }
-
-
-console.log(changeEnough(14.11, [2, 100, 0, 0]));
+// console.log(changeEnough(14.11, [2, 100, 0, 0]));
+console.log(changeEnough(0.75, [0, 0, 20, 5]));
