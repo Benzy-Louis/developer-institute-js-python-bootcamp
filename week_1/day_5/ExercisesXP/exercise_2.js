@@ -17,3 +17,21 @@ John created a simple tip calculator to help calculate how much to tip when he a
 
 5. Call the calculateTip() function.
 */
+
+function caculateTip() {
+  const amountToBill = Number(prompt('What is the amount for the bill?'));
+  let tip;
+  if (amountToBill < 50) {
+    // tip 20%
+    tip = amountToBill*0.2;
+  } else if ((amountToBill >= 50) && (amountToBill <= 200)) {
+    // tip 15%
+    tip = amountToBill*0.15;
+  } else if ((amountToBill > 200)) {
+    // tip 10%
+    tip = amountToBill*0.1;
+  }
+  console.log(`The tip amount is ${tip}, and the final bill is ${amountToBill+tip}.`);
+}
+
+caculateTip();
