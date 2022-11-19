@@ -72,7 +72,7 @@ function drawStarFrameAroundWords(wordsArray, lengthOfLongestWord) {
 
   // * " " "word gap + space padding" " " * // So we have 2 characters added on both sides
   for (let i = 0; i < wordsArray.length; i++) {
-    console.log('* ' + wordsArray[i] + ' '.repeat(lengthOfLongestWord - wordsArray[i].length) + ' * ');
+    console.log('* ' + wordsArray[i] + ' '.repeat(lengthOfLongestWord - wordsArray[i].length) + ' *');
   }
 
   // Draw the bottom frame, so 2 more characters on both sides
