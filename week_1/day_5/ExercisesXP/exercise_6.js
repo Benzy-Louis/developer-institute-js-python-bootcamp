@@ -13,7 +13,7 @@ function hotelCost() {
   // Ask number of nights they would like to stay in hotel
   let totalPriceOfHotel;
   do {
-    numberOfNights = prompt("How many nights would you like to stay at the hotel?");
+    numberOfNights = prompt('How many nights would you like to stay at the hotel?');
   } while ((Number(numberOfNights) < 0) || isNaN(numberOfNights) || numberOfNights === '');
   return 140 * Number(numberOfNights);
 }
@@ -31,14 +31,14 @@ function hotelCost() {
 function planeRideCost() {
   let destination;
   do {
-    destination = prompt("What is your destination?");
+    destination = prompt('What is your destination?');
     // alert(`${destination} is of type ${typeof destination} and length: ${destination.length} isNaN result: ${isNaN(destination)}`);
   } while (destination.length == 0);
 
   switch (destination.toLowerCase()) {
-    case "london":
+    case 'london':
       return 183;
-    case "paris":
+    case 'paris':
       return 220;
     default:
       console.log(destination);
@@ -58,7 +58,7 @@ function planeRideCost() {
 
 function rentalCarCost() {
   do {
-    numberOfDays = prompt("For many days would you like to rent a car?");
+    numberOfDays = prompt('For many days would you like to rent a car?');
   } while ((Number(numberOfDays) < 0) || isNaN(numberOfDays) || numberOfDays === '');
   if (numberOfDays > 10) {
     // discounted
@@ -84,7 +84,7 @@ function totalVacationCost() {
   const y = hotelCost();
   const z = planeRideCost();
 
-  alert(`The car cost: ${x}, the hotel cost: ${y}, the plane tickets cost: ${z}.`)
+  alert(`The car cost: ${x}, the hotel cost: ${y}, the plane tickets cost: ${z}.`);
 }
 
-totalVacationCost()
+totalVacationCost();
