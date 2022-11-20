@@ -11,7 +11,6 @@ Let's create functions that calculate your vacation's costs:
 */
 function hotelCost() {
   // Ask number of nights they would like to stay in hotel
-  let totalPriceOfHotel;
   do {
     numberOfNights = prompt('How many nights would you like to stay at the hotel?');
   } while ((Number(numberOfNights) < 0) || isNaN(numberOfNights) || numberOfNights === '');
