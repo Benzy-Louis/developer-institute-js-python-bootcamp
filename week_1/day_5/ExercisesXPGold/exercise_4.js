@@ -13,3 +13,16 @@ Examples
 isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1) ➞ true
 isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 6) ➞ false
 */
+
+function isOmnipresent(arr, omnipresentValue) {
+  for (const elem of arr) {
+    if (!(elem.includes(omnipresentValue))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1));
+console.log(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 6));
+
