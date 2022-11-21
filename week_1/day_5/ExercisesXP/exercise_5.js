@@ -40,7 +40,7 @@ function changeEnough(itemPrice, amountOfChange) {
   let sum = 0;
   for (const i in amountOfChange) {
     if (Object.prototype.hasOwnProperty.call(amountOfChange, i)) {
-      sum += changeValue[i] * amountOfChange[i];
+      sum = sum + changeValue[i] * amountOfChange[i];
     }
   }
   return (sum > itemPrice);
