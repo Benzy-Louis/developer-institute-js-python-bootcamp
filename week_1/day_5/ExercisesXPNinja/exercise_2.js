@@ -13,3 +13,20 @@ For example,
 
 capitalize("abcdef") will return ['AbCdEf', 'aBcDeF']
 */
+
+function capitalize(str) {
+  let oddStr = '';
+  let evenStr = '';
+  for (const index in str) {
+    if (index % 2 == 0) {
+      evenStr += str[index].toUpperCase();
+      oddStr += str[index];
+    } else {
+      evenStr += str[index];
+      oddStr += str[index].toUpperCase();
+    }
+  }
+  return [evenStr, oddStr];
+}
+
+console.log(capitalize('abcdef'));
