@@ -21,13 +21,13 @@
 import random
 
 user_string = input("Input a string of 10 characters please: ")
-if len(user_string) == 10:
+if len(''.join(user_string.split())) == 10:
     display_string = ""
     SHUFFLED_STRING = ''.join(random.sample(user_string, len(user_string)))
     for char in SHUFFLED_STRING:
         display_string += char
         print(display_string)
-elif len(user_string) > 10 :
+elif len(''.join(user_string.split())) > 10 :
     print("string too long.")
 else :
     print("string not long enough")
