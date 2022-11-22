@@ -6,14 +6,9 @@ Write a JS function that takes an array and returns a new array with only unique
 
 Example list=[1,2,3,3,3,3,4,5] newList = [1,2,3,4,5]
 */
-
-
-
-
-
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 /*
-The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+The filter(callBackFn) method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 filter(callBackFn)
 // Callback function
 callbackFn
