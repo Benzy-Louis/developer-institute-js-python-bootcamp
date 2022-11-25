@@ -8,7 +8,6 @@
 #     $a
 #     #t%
 #     ^r!
-
 # To decrypt the matrix, Neo reads each
 # column from top to bottom, starting
 # from the leftmost column, selecting
@@ -27,8 +26,7 @@
 
 # Hint (if needed) : Look at the remote learning "Matrix" videos
 import re
-
-matrix_example = """7i3
+MATRIX_EXAMPLE = """7i3
 Tsi
 h%x
 i #
@@ -36,10 +34,8 @@ sM
 $a 
 #t%
 ^r!"""
-matrix_char = matrix_example.split("\n")
-matrix_char_transposed = [[ matrix_char[j][i] for j in range(len(matrix_char))] for i in range(len(matrix_char[0]))]
-
-# Join the transposed list together then eliminate other characters replacing them with space
-matrix_string = "".join([ "".join(matrix_char_transposed[i]) for i in range(len(matrix_char_transposed))])
-
-print(re.sub(r"[^a-z]+"," ",matrix_string,flags=re.IGNORECASE).strip())
+MATRIX_CHAR = MATRIX_EXAMPLE.split("\n")
+MATRIX_CHAR_TRANSPOSED = zip(*MATRIX_CHAR)
+print(MATRIX_CHAR_TRANSPOSED)
+MATRIX_STRING = "".join(sum(MATRIX_CHAR_TRANSPOSED, ()))
+print(re.sub(r"[^a-z]+", " ", MATRIX_STRING, flags=re.IGNORECASE).strip())
