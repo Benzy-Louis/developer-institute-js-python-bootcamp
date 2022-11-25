@@ -34,7 +34,14 @@ sM
 $a 
 #t%
 ^r!"""
-MATRIX_CHAR = MATRIX_EXAMPLE.split("\n")
-MATRIX_CHAR_TRANSPOSED = zip(*MATRIX_CHAR)
-MATRIX_STRING = "".join(sum(MATRIX_CHAR_TRANSPOSED, ()))
-print(re.sub(r"[^a-z]+", " ", MATRIX_STRING, flags=re.IGNORECASE).strip())
+
+
+def decode_matrix(message):
+    """ Decode Matrix Message"""
+    message_matrix = message.split("\n")
+    message_matrix_transposed = zip(*message_matrix)
+    message_transposed = "".join(sum(message_matrix_transposed, ()))
+    return re.sub(r"[^a-z]+", " ", message_transposed, flags=re.IGNORECASE).strip()
+
+
+print(decode_matrix(MATRIX_EXAMPLE))
