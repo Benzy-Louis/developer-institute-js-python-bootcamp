@@ -1,4 +1,4 @@
-# http: // learn.di-learning.com/courses/collection/56/course/12/section/55/chapter/276
+# http://learn.di-learning.com/courses/collection/56/course/12/section/55/chapter/276
 # Instructions
 # Given a "Matrix" string:
 #     7i3
@@ -38,10 +38,14 @@ $a
 
 
 def decode_matrix(message):
-    """ Decode Matrix Message"""
+    """Decode Matrix Message"""
     message_matrix = message.split("\n")
     message_matrix_transposed = zip(*message_matrix)
-    message_transposed = "".join(sum(message_matrix_transposed, ()))
+    message_transposed = ""
+    for _message in message_matrix_transposed:
+        # print(_message)
+        message_transposed += "".join(_message)
+        # print(message_transposed)
     return re.sub(r"[^a-z]+", " ", message_transposed, flags=re.IGNORECASE).strip()
 
 
