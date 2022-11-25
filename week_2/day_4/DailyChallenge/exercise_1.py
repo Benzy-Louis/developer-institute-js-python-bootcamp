@@ -36,6 +36,5 @@ $a
 ^r!"""
 MATRIX_CHAR = MATRIX_EXAMPLE.split("\n")
 MATRIX_CHAR_TRANSPOSED = zip(*MATRIX_CHAR)
-print(MATRIX_CHAR_TRANSPOSED)
 MATRIX_STRING = "".join(sum(MATRIX_CHAR_TRANSPOSED, ()))
 print(re.sub(r"[^a-z]+", " ", MATRIX_STRING, flags=re.IGNORECASE).strip())
