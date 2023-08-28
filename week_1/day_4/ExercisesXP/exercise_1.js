@@ -61,7 +61,7 @@ Using a loop, iterate through the people array and console.log each person.
 console.log("\nPart II - A\n")
 
 for (let person of people) {
-    console.log(person)
+    console.log(person);
 }
 
 /*

@@ -14,10 +14,10 @@
 
 function showMumAndDadAge(myAge) {
   myAge = Number(myAge);
-  console.log(`My mum is twice my age: ${myAge * 2}, and my dad is 1.2 times the age of my mum: ${(parseInt(myAge * 2 * 1.2))} `);
+  return `My mum is twice my age: ${parseInt(myAge * 2)}, and my dad is 1.2 times the age of my mum: ${(parseInt(myAge * 2 * 1.2))}`;
 }
 
-showMumAndDadAge(18);
+console.log(showMumAndDadAge(18));
 
 // Exercise 2
 /*

@@ -11,13 +11,13 @@
 // ]
 let persons = {
     id: 123456,
-    firstName: "John",
-    lastName: "Doe",
-    age: 50
-}
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 50,
+};
 
-let johnFirstName = persons['firstName']
-persons['eyesColor'] = "blue"
+let johnFirstName = persons['firstName'];
+persons['eyesColor'] = 'blue';
 //
 persons['eyeColor'];
 persons.eyesColor; // same way of accessing the same value

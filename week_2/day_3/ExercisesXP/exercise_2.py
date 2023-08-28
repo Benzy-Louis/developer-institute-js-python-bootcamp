@@ -36,6 +36,6 @@ user_family = input("Please input the name and age of the members\n" +
 
 family_list = re.split(r',\s*|\s', user_family)
 family = {family_list[i]: int(family_list[i+1])
-          for i in range(0, len(family_list)-1, 2)}
+          for i in range(0, len(family_list), 2)}
 print(f"Total cost of tickets: {cinemax_total_cost(**family)}")
 print(family)

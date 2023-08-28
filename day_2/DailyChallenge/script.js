@@ -11,12 +11,12 @@ const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 At the end you should see this outcome:
 ["Kiwi", "Oranges", "Blueberries"]
 */
-const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+const fruits = ['Banana', 'Apples', 'Oranges', 'Blueberries'];
 fruits.shift();
 fruits.sort();
 // console.log(fruits);
-fruits.push("Kiwi");
-fruits.splice(fruits.indexOf("Apples"), 1);
+fruits.push('Kiwi');
+fruits.splice(fruits.indexOf('Apples'), 1);
 // console.log(fruits);
 fruits.reverse();
 console.log(fruits);
@@ -31,5 +31,5 @@ Bonus: If you would like more array exercises take a look at the link below.
 https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php
 Array Exercises
 */
-const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-console.log(moreFruits[1][1][0])
+const moreFruits = ['Banana', ['Apples', ['Oranges'], 'Blueberries']];
+console.log(moreFruits[1][1][0]);
